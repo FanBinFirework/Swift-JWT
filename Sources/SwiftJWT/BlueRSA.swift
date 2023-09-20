@@ -14,7 +14,7 @@
  * limitations under the License.
  **/
 
-import CryptorRSA
+import CryptorRSAKit
 import LoggerAPI
 
 import Foundation
