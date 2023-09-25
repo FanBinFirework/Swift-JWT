@@ -31,7 +31,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Kitura/BlueRSA.git", from: "1.0.200"),
+        .package(url: "https://github.com/FanBinFirework/BlueRSA.git",  branch: "firework"),
         .package(url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
         .package(url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
         .package(url: "https://github.com/FanBinFirework/LoggerAPI.git", branch: "firework"),
@@ -43,7 +43,7 @@ let package = Package(
             dependencies: [
                 "LoggerAPI",
                 "KituraContracts",
-                .product(name: "CryptorRSA", package: "BlueRSA", moduleAliases: ["CryptorRSA": "CryptorRSAKit"]),
+                .product(name: "CryptorRSAKit", package: "BlueRSA"),
                 .product(name: "Cryptor", package: "BlueCryptor"),
                 .product(name: "CryptorECC", package: "BlueECC"),
             ]),
