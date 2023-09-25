@@ -31,10 +31,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/FanBinFirework/BlueRSA.git",  branch: "firework"),
+        .package(url: "https://github.com/FanBinFirework/BlueRSA.git", branch: "firework"),
         .package(url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
         .package(url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
-        .package(url: "https://github.com/FanBinFirework/LoggerAPI.git", branch: "firework"),
+        .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
         .package(url: "https://github.com/Kitura/KituraContracts.git", from: "2.0.1")
     ],
     targets : [
