@@ -14,7 +14,7 @@
  * limitations under the License.
  **/
 
-import Cryptor
+import CryptorKit
 import LoggerAPI
 import Foundation
 

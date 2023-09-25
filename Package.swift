@@ -32,7 +32,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/FanBinFirework/BlueRSA.git", branch: "firework"),
-        .package(url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
+        .package(url: "https://github.com/FanBinFirework/BlueCryptor.git", branch: "firework"),
         .package(url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
         .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
         .package(url: "https://github.com/Kitura/KituraContracts.git", from: "2.0.1")
@@ -44,7 +44,7 @@ let package = Package(
                 "LoggerAPI",
                 "KituraContracts",
                 .product(name: "CryptorRSAKit", package: "BlueRSA"),
-                .product(name: "Cryptor", package: "BlueCryptor"),
+                .product(name: "CryptorKit", package: "BlueCryptor"),
                 .product(name: "CryptorECC", package: "BlueECC"),
             ]),
         .testTarget(name: "SwiftJWTTests", dependencies: ["SwiftJWT"])
